@@ -20,9 +20,9 @@ package,json DONE
 5. populate affirmations table DONE 
  - 5a. Put data into affirmation array DONE 
 6. Write async functions in models folder DONE 
-7. Import and insert module functions in routers
-8. Make sure that node-modules & .env are in gitignore
-9. Set up middleware for base path in app.js 
- - get affrimation 
- - fet affirmation by id
+7. Import and insert module functions in routers DONE
+8. Make sure that node-modules & .env are in gitignore DONE
+9. Set up middleware for base path in app.js DONE
+ - get affrimation DONE
+ - Get affirmation by id DONE
 10. Test get requests in Jest 
