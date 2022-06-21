@@ -1,5 +1,5 @@
 ----------------------------PLAN-----------------------------------------
-0. Install express
+0. Install express 
 1. Set up file structure 
  db
   scripts: create & populate table
@@ -16,7 +16,7 @@ app.js
 package,json DONE
 2. Setting up database on Heroku DONE
 3. Set up a pool with a query function DONE
-4. Create affimations table
+4. Create affimations table DONE
 5. populate affirmations table
 6. Write async functions in models folder
 7. Import and insert module functions in routers
