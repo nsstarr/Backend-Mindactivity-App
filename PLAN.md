@@ -1,5 +1,5 @@
 ----------------------------PLAN-----------------------------------------
-0. Install express 
+0. Install express DONE
 1. Set up file structure 
  db
   scripts: create & populate table
@@ -18,8 +18,8 @@ package,json DONE
 3. Set up a pool with a query function DONE
 4. Create affimations table DONE
 5. populate affirmations table DONE 
- - 5a. Put data into affirmation array 
-6. Write async functions in models folder
+ - 5a. Put data into affirmation array DONE 
+6. Write async functions in models folder DONE 
 7. Import and insert module functions in routers
 8. Make sure that node-modules & .env are in gitignore
 9. Set up middleware for base path in app.js 
