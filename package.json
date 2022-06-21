@@ -1,0 +1,25 @@
+{
+  "name": "week-9-project-backend",
+  "version": "1.0.0",
+  "description": "Your task is to build a REST API using Node.js, Express & PostgreSQL. It will be a chance to embed everything we've learned so far and practice breaking down problems into solvable chunks.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon  -r dotenv/config app.js",
+    "db:createMoviesTable":"node -r dotenv/config ./db/scripts/createMoviesTable.js",
+    "db:populateMoviesTable":"node -r dotenv/config ./db/scripts/populateMoviesTable.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
