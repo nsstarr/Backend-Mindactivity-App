@@ -13,9 +13,9 @@
  .env
 .gitignore
 app.js
-package,json
-2. Setting up database on Heroku
-3. Set up a pool with a query function
+package,json DONE
+2. Setting up database on Heroku DONE
+3. Set up a pool with a query function DONE
 4. Create affimations table
 5. populate affirmations table
 6. Write async functions in models folder
