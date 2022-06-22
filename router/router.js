@@ -7,7 +7,7 @@ import { getAffirmations } from "../models/models.js";
 affirmationsRouter.get("/", async function (req, res) {
 const result = await getAffirmations ();
 return res.json({
-sucess: true,
+success: true,
 payload: result,
 });
 });
@@ -19,7 +19,7 @@ affirmationsRouter.get("/:id", async function (req, res) {
     const id = Number(req.params.id);
     const affirmationsResult = await getAffirmationsById(id);
     return res.json({
-    sucess: true,
+    success: true,
     payload: affirmationsResult,
     });
     });
@@ -30,7 +30,7 @@ affirmationsRouter.delete("/:id", async function (req,res) {
     const id = Number(req.params.id);
     const affirmationDelete = await deleteAffirmationById(id);
     return res.json({
-        sucess: true,
+        success: true,
         payload: affirmationDelete,
     });
 });

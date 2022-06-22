@@ -1,4 +1,4 @@
-import express from "express";
+import express, { application } from "express";
 import  affirmationsRouter  from "./router/router.js";
 const app = express();
 const PORT = process.env.port || 3001;
@@ -10,19 +10,19 @@ import { query } from './db/index.js';
 
 
 //Connecting to the database through node-posgres connection pool
-(async () => {
-  try {
-    const client = await pool.connect();
-    const res = await client.query(query);
-    console.log('Connected!!!')
+// (async () => {
+//   try {
+//     const client = await pool.connect();
+//     const res = await client.query(query);
+//     console.log('Connected!!!')
 
-    for (let row of res.rows) {
-      console.log(row);
-    }
-  } catch (err) {
-    console.error(err);
-  }
-})();
+//     for (let row of res.rows) {
+//       console.log(row);
+//     }
+//   } catch (err) {
+//     console.error(err);
+//   }
+// })();
 
 //CORS 
 app.use((req, res, next) => {
@@ -60,3 +60,5 @@ app.get('/api', (req, res) => {
 app.listen(PORT, function () {
   console.log(`Server is running on port ${PORT}`);
 });
+
+export default app;
