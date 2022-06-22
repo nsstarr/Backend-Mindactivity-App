@@ -11,14 +11,16 @@ function App() {
   const fetchAffirmations = async () => {
     const response = await fetch("http://localhost:3001/mindactivity");
     const data = await response.json();
-    setAffirmations(data)
+    setAffirmations(data.payload)
   }
+  
+// wrapping affirmations into an anon function stops "affirmations.app is not a function" errors
 
   return (
-    <div className="App">{affirmations.map((t) => (
-      <div key={t.id}>{t.title}</div>
-    ))}
-    <div>Hello world</div></div>
+    <div className="App">{affirmations.map((t) => {
+      return ( <div key={t.id}>{t.content}</div>)
+    })}
+    <h1>Hello world</h1></div>
   );
 }
 
