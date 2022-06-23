@@ -1,5 +1,6 @@
 import express from "express";
 import  affirmationsRouter  from "./router/router.js";
+import blogsRouter from "./router/blogsRouter.js";
 const app = express();
 const PORT = process.env.port || 3001;
 import pg from 'pg';
@@ -49,6 +50,7 @@ app.use(express.urlencoded({ extended: false }));
 //doesn't work because cors package hasn't been properly imported
 // app.use(cors())
 app.use('/mindactivity', affirmationsRouter)
+app.use("/blogs", blogsRouter);
 app.use('/mindactivity/<id>', affirmationsRouter)
 app.use(express.json());
 

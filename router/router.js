@@ -35,14 +35,19 @@ affirmationsRouter.delete("/:id", async function (req,res) {
     });
 });
 
-import { getBlogs } from "../models/models.js";
-affirmationsRouter.get("/blogs", async function (req, res) {
-const result = await getBlogs();
-return res.json({
-sucess: true,
-payload: result,
-});
-});
+//blogs GET request 
+
+// import { getBlogs } from "../models/models.js";
+
+// affirmationsRouter.get("/blogs", async function (req, res) {
+// const result = await getBlogs();
+// console.log(result)
+// return res.json({
+// sucess: true,
+// payload: result,
+// });
+// });
+
 
 export default affirmationsRouter;
 
