@@ -1,6 +1,7 @@
 import express from 'express';
 import { query } from '../db/index.js';
 import { affirmations } from '../lib/data.js'
+import blogs from '../lib/blogs.js'
 
 //Get Affirmation table
 
@@ -22,4 +23,10 @@ export async function deleteAffirmationById(id) {
         'DELETE FROM codingAffirmations WHERE id = $1 RETURNING *;',
         [id]
     );
+}
+
+//Get blogs table
+export async function getBlogs() {
+    const blogs = await query(`SELECT * FROM blogs1;`);
+    return blogs.rows
 }
