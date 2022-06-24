@@ -11,7 +11,7 @@
     "db:createBlogTable": "node -r dotenv/config ./db/scripts/createBlogTable.js",
     "db:populateAffirmationsTable": "node -r dotenv/config ./db/scripts/populateAffirmationsTable.js",
     "db:populateBlogTable": "node -r dotenv/config ./db/scripts/populateBlogTable.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node -r dotenv/config --experimental-vm-modules node_modules/jest/bin/jest.js",
     "build": "cd client && npm install && npm run build"
   },
   "keywords": [],
@@ -26,8 +26,11 @@
     "pg": "^8.7.3"
   },
   "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.17.12",
     "dotenv": "^16.0.1",
-    "nodemon": "^2.0.16"
+    "jest": "^28.1.1",
+    "nodemon": "^2.0.16",
+    "supertest": "^6.2.3"
   },
   "engines": {
     "node": "v16.15.0"
