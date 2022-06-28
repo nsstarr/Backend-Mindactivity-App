@@ -2,20 +2,21 @@ import app from '../app.js'
 import request from 'supertest'
 import {test, expect, describe} from '@jest/globals'
 
+// // beforeAll/afterAll currently not closing the test after it's complete.
 
-beforeAll(done => {
-    done()
-  })
+ beforeAll(done => {
+   done()
+   })
 
 describe("GET affirmations", function() {
     test("Get request (status code: 200) and check that header is json", async function(){
-        const response = await request(app).get("/mindactivity");
+        const response = await request(app).get("/v1/mindactivity");
         expect(response.statusCode).toEqual(200);
         expect(response.headers["content-type"]).toMatch(/json/);
     })
 
     test("GET request responds with correct body structure", async function(){
-        const response = await request(app).get("/mindactivity");
+        const response = await request(app).get("/v1/mindactivity");
         const actual = response.body;
         const expected = {
             success: true,
@@ -31,7 +32,7 @@ describe("GET affirmations", function() {
     })
 
     test("GET request with specific ID and correct body structure", async function(){
-        const response = await request(app).get("/mindactivity/4");
+        const response = await request(app).get("/v1/mindactivity/4");
         const actual = response.body;
         const expected = {
             success: true,
@@ -44,7 +45,7 @@ describe("GET affirmations", function() {
     })
 })
 
- afterAll(done => {
-    app.close();
-    done();
+  afterAll(done => {
+     app.close();
+  done();
 });

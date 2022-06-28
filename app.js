@@ -29,8 +29,8 @@ app.use(express.urlencoded({ extended: false }));
 //middleware
 
 //v1 displays the version number of this app, potentially can be placed at the start of root path
-app.use('/mindactivity/v1', affirmationsRouter)
-app.use("/blogs/v1", blogsRouter);
+app.use('/v1/mindactivity', affirmationsRouter)
+app.use("/v1/blogs", blogsRouter);
 app.use(express.json());
 
 //test get request
