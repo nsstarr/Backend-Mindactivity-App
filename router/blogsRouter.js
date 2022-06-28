@@ -3,7 +3,7 @@ const blogsRouter = express.Router();
 
 //blogs GET request 
 
-import { getBlogs } from "../models/models.js";
+import { getBlogs } from "../models/affirmationsModels.js";
 
 blogsRouter.get("/", async function (req, res) {
 const result = await getBlogs();

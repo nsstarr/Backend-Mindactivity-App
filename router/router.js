@@ -3,7 +3,7 @@ const affirmationsRouter = express.Router();
 
 //GET REQUEST ROUTER 
 
-import { getAffirmations } from "../models/models.js";
+import { getAffirmations } from "../models/affirmationsModels.js";
 affirmationsRouter.get("/", async function (req, res) {
 const result = await getAffirmations ();
 return res.json({
@@ -14,7 +14,7 @@ payload: result,
 
 //GET REQUEST AFFIRMATION BY ID
 
-import { getAffirmationsById } from "../models/models.js";
+import { getAffirmationsById } from "../models/affirmationsModels.js";
 affirmationsRouter.get("/:id", async function (req, res) {
     const id = Number(req.params.id);
     const affirmationsResult = await getAffirmationsById(id);
@@ -25,7 +25,7 @@ affirmationsRouter.get("/:id", async function (req, res) {
     });
 //DELETE REQUEST import express from "express";
  
-import { deleteAffirmationById } from "../models/models.js";
+import { deleteAffirmationById } from "../models/affirmationsModels.js";
 affirmationsRouter.delete("/:id", async function (req,res) {
     const id = Number(req.params.id);
     const affirmationDelete = await deleteAffirmationById(id);
