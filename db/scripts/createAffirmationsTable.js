@@ -1,6 +1,6 @@
 import { query } from '../index.js'
 
-//Creating a table with affirmations
+//Creating a table for affirmation data
 
 const sqlString = `CREATE TABLE IF NOT EXISTS codingAffirmations (id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY, content TEXT);`;
 
