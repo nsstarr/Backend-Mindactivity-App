@@ -1,6 +1,8 @@
 import { query } from "../index.js";
 import blogs from "../../lib/blogs.js";
 
+// adding data to blogs table
+
 async function populateBlogTable() {
   for (let i = 0; i < blogs.length; i++) {
     const res = await query(

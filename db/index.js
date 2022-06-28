@@ -1,6 +1,7 @@
 import pg from "pg";
 
 //Setting up Pool
+//Commented out code is a backup database
 
 export const pool = new pg.Pool({ 
     // user: process.env.PGUSER,

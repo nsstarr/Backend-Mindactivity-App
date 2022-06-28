@@ -1,29 +1,9 @@
 import express, { application } from "express";
-import  affirmationsRouter  from "./router/router.js";
+import  affirmationsRouter  from "./router/affirmationRouter.js";
 import blogsRouter from "./router/blogsRouter.js";
 const app = express();
-const PORT = process.env.port || 3001;
-import pg from 'pg';
-//attempting to import cors package in ES6 module
-// const cors = { cors }; 
-import { pool } from './db/index.js';
-import { query } from './db/index.js';
 
 
-//Connecting to the database through node-posgres connection pool
-// (async () => {
-//   try {
-//     const client = await pool.connect();
-//     const res = await client.query(query);
-//     console.log('Connected!!!')
-
-//     for (let row of res.rows) {
-//       console.log(row);
-//     }
-//   } catch (err) {
-//     console.error(err);
-//   }
-// })();
 
 //CORS 
 app.use((req, res, next) => {
@@ -45,13 +25,12 @@ app.use((req, res, next) => {
 
 app.use(express.urlencoded({ extended: false }));
 
+
 //middleware
 
-//doesn't work because cors package hasn't been properly imported
-// app.use(cors())
-app.use('/mindactivity', affirmationsRouter)
-app.use("/blogs", blogsRouter);
-app.use('/mindactivity/<id>', affirmationsRouter)
+//v1 displays the version number of this app, potentially can be placed at the start of root path
+app.use('/v1/mindactivity', affirmationsRouter)
+app.use("/v1/blogs", blogsRouter);
 app.use(express.json());
 
 //test get request
@@ -59,8 +38,5 @@ app.get('/api', (req, res) => {
   res.json({message: 'Hello from the server!'});
 });
 
-app.listen(PORT, function () {
-  console.log(`Server is running on port ${PORT}`);
-});
 
 export default app;
