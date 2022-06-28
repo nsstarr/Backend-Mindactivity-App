@@ -1,10 +1,7 @@
 import app from '../app.js'
 import request from 'supertest'
 import {test, expect, describe} from '@jest/globals'
-
-beforeAll(done => {
-    done()
-    })
+import {pool} from '../db/index.js'
 
 describe("GET blogs", function() {
     test("Get request (status code: 200) and check that header is json", async function(){
@@ -35,8 +32,7 @@ describe("GET blogs", function() {
     })
 })
 
-afterAll(done => {
-    app.close();
- done();
+afterAll(async () => {
+    await pool.end()
 });
 

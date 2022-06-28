@@ -1,12 +1,11 @@
 import app from '../app.js'
 import request from 'supertest'
 import {test, expect, describe} from '@jest/globals'
+import {pool} from '../db/index.js'
 
-// // beforeAll/afterAll currently not closing the test after it's complete.
 
- beforeAll(done => {
-   done()
-   })
+// beforeAll/afterAll currently not closing the test after it's complete.
+
 
 describe("GET affirmations", function() {
     test("Get request (status code: 200) and check that header is json", async function(){
@@ -45,7 +44,6 @@ describe("GET affirmations", function() {
     })
 })
 
-  afterAll(done => {
-     app.close();
-  done();
+  afterAll(async () => {
+    await pool.end()
 });

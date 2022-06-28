@@ -2,7 +2,7 @@ import express, { application } from "express";
 import  affirmationsRouter  from "./router/affirmationRouter.js";
 import blogsRouter from "./router/blogsRouter.js";
 const app = express();
-const PORT = process.env.port || 3001;
+
 
 
 //CORS 
@@ -38,8 +38,5 @@ app.get('/api', (req, res) => {
   res.json({message: 'Hello from the server!'});
 });
 
-app.listen(PORT, function () {
-  console.log(`Server is running on port ${PORT}`);
-});
 
 export default app;
