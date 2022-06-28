@@ -1,6 +1,8 @@
 import express from "express";
 const affirmationsRouter = express.Router();
 
+// removed commented out blogsRouter function from affirmationRouter file
+
 //GET REQUEST ROUTER 
 
 import { getAffirmations } from "../models/affirmationsModels.js";
@@ -35,18 +37,6 @@ affirmationsRouter.delete("/:id", async function (req,res) {
     });
 });
 
-//blogs GET request 
-
-// import { getBlogs } from "../models/models.js";
-
-// affirmationsRouter.get("/blogs", async function (req, res) {
-// const result = await getBlogs();
-// console.log(result)
-// return res.json({
-// sucess: true,
-// payload: result,
-// });
-// });
 
 
 export default affirmationsRouter;

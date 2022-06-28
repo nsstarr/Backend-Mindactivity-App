@@ -1,5 +1,5 @@
 import { query } from "../index.js";
-import { affirmations } from "../../lib/data.js";
+import { affirmations } from "../../lib/affirmationData.js";
 
 // adding data to affirmations table
 

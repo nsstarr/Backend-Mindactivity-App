@@ -3,9 +3,6 @@ import  affirmationsRouter  from "./router/affirmationRouter.js";
 import blogsRouter from "./router/blogsRouter.js";
 const app = express();
 const PORT = process.env.port || 3001;
-import pg from 'pg';
-import { pool } from './db/index.js';
-import { query } from './db/index.js';
 
 
 //CORS 

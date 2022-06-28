@@ -1,0 +1,1 @@
+// created seperate blogsRouter.test.js to seperate between affirmationsRouter.test.js 
