@@ -1,4 +1,24 @@
 # :sparkles: Mindactivity
+
+
+## ***List of Contents***
+1. [Introduction](#about-mindactivity)
+2. [Environment Variables](#environment-variables)
+3. [Run Locally](#run-locally)
+4. [How The Server Works](#how-the-server-works)
+5. [Tech Stack](#tech-stack)
+6. [Running Tests](#running-tests)
+7. [Usage Examples](#usageexamples)
+8. [API References](#api-reference-list)
+9. [Appendix](#appendix)
+
+<br/>
+
+---
+
+<br />
+
+## ***About Mindactivity***
 Welcome to Mindactivity! Just in case you were curious about the name, mindfulness + productivity = mindactivity.
 It's a Mindfullness App designed to manage stress levels and increase productivity using meditative media.
 
@@ -98,7 +118,7 @@ To close the server, press the following keys; (make sure you're inside the term
 
 **Engine:** Node.js
 
-**Dev Dependencies:** Nodemon, Babel, Jest, Supertest, Dotenv, 
+**Dev Dependencies:** Nodemon, Babel, Jest, Supertest, Dotenv 
 
 **Dependencies:** Express, PostgreSQL, Cors, Morgan
 
