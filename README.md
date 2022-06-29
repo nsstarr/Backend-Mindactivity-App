@@ -19,7 +19,7 @@
 
 <br />
 
-## :sparkle: ***About Mindactivity*** :sparkle:
+## :sparkles: ***About Mindactivity*** :sparkles:
 Welcome to Mindactivity! Just in case you were curious about the name, mindfulness + productivity = mindactivity.
 It's a Mindfullness App designed to manage stress levels and increase productivity using meditative media.
 
