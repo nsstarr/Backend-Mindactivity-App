@@ -3,15 +3,15 @@
 </center>
 
 ## ***List of Contents***
-1. [Introduction](#about-mindactivity)
-2. [Environment Variables](#environment-variables)
-3. [Run Locally](#run-locally)
-4. [How The Server Works](#how-the-server-works)
-5. [Tech Stack](#tech-stack)
-6. [Running Tests](#running-tests)
-7. [Usage Examples](#usage-examples)
-8. [API References](#api-reference-list)
-9. [Appendix](#appendix)
+1. [Introduction](#sparkles-about-mindactivity-sparkles)
+2. [Environment Variables](#environment-variables-⛓️)
+3. [Run Locally](#run-locally-🏃‍♀️)
+4. [How The Server Works](#how-the-server-works-🌐)
+5. [Tech Stack](#tech-stack-⚙️)
+6. [Running Tests](#running-tests-🃏)
+7. [Usage Examples](#usageexamples-🔬)
+8. [API References](#api-reference-list-🔎)
+9. [Appendix](#appendix-📝)
 
 <br/>
 
