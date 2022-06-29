@@ -31,7 +31,7 @@ It's a Mindfullness App designed to manage stress levels and increase productivi
 
 <br />
 
-## ***Environment Variables***
+## ***Environment Variables*** ⛓️
 
 To run this backend repository, please create a .env file in the root of the folder and inside, add your credentials in the following order; (these credentials can be found in your Heroku credential settings)
 
@@ -58,7 +58,7 @@ PGPORT=
 
 <br />
 
-## ***Run Locally***
+## ***Run Locally*** 🏃‍♀️
 
 Navigate to where you would like to save the project
 
@@ -90,7 +90,7 @@ Install dependencies
 
 <br />
 
-## ***How the server works***
+## ***How the server works*** 🌐
 
 Make sure you're inside the project directory (follow 'Run Locally' section)
 
@@ -115,7 +115,7 @@ To close the server, press the following keys; (make sure you're inside the term
 
 <br />
 
-## ***Tech Stack***
+## ***Tech Stack*** ⚙️
 
 **Engine:** Node.js
 
@@ -131,7 +131,7 @@ To close the server, press the following keys; (make sure you're inside the term
 
 <br />
 
-## ***Running Tests***
+## ***Running Tests*** 🃏
 
 To run tests, run the following command
 
@@ -145,7 +145,7 @@ To run tests, run the following command
 
 <br />
 
-## ***Usage/Examples***
+## ***Usage/Examples*** 🔬
 
 Here are some basic examples of how to use this API:
 
@@ -182,7 +182,7 @@ npm run db:populateAffirmationsTable
 
 <br />
 
-## ***API reference list***
+## ***API reference list*** 🔎
 
 **For Affirmations:**
 
@@ -210,7 +210,7 @@ http://localhost:3001/v1/blogs
 
 <br />
 
-## ***Appendix***
+## ***Appendix*** 📝
 
 **Here are some links to documentation that could be helpful with using this server:**
 
