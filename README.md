@@ -9,7 +9,7 @@
 4. [How The Server Works](#how-the-server-works)
 5. [Tech Stack](#tech-stack)
 6. [Running Tests](#running-tests)
-7. [Usage Examples](#usageexamples)
+7. [Usage Examples](#usage-examples)
 8. [API References](#api-reference-list)
 9. [Appendix](#appendix)
 
