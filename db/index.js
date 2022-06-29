@@ -9,9 +9,12 @@ export const pool = new pg.Pool({
     // database: process.env.PGDATABASE,
     // password: process.env.PGPASSWORD,
     // port: process.env.PGPORT, 
-    connectionString: process.env.DATABASE_URL,
+    connectionString: process.env.DATABASE_URI,
     ssl:{rejectUnauthorized:false},
 })
+
+
+//This is redundant, instead, import Pool into the scripts and use Pool.query
 
 export function query (text, params, callback) {
     return pool.query(text, params, callback);
