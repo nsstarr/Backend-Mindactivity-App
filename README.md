@@ -4,8 +4,8 @@
 
 ## ***List of Contents***
 1. [Introduction](#sparkles-about-mindactivity-sparkles)
-2. [Environment Variables](#environment-variables-)
-3. [Run Locally](#run-locally-)
+2. [Environment Variables](#environment-variables)
+3. [Run Locally](#run-locally)
 4. [How The Server Works](#how-the-server-works-)
 5. [Tech Stack](#tech-stack-)
 6. [Running Tests](#running-tests-)
@@ -31,6 +31,8 @@ It's a Mindfullness App designed to manage stress levels and increase productivi
 
 <br />
 
+<a name="environment-variables"/>
+  
 ## ***Environment Variables*** ⛓️
 
 To run this backend repository, please create a .env file in the root of the folder and inside, add your credentials in the following order; (these credentials can be found in your Heroku credential settings)
