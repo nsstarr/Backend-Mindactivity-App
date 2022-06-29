@@ -1,5 +1,8 @@
 # :sparkles: Mindactivity
 
+<center>
+<img src="./assets/Screenshot 2022-06-29 100133.jpg" />
+</center>
 
 ## ***List of Contents***
 1. [Introduction](#about-mindactivity)
