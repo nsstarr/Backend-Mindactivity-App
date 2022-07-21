@@ -21,7 +21,7 @@
 
 ## :sparkles: ***About Mindactivity*** :sparkles:
 Welcome to Mindactivity! Just in case you were curious about the name, mindfulness + productivity = mindactivity.
-It's a Mindfullness App designed to manage stress levels and increase productivity using meditative media.
+It's a Mindfulness App designed to manage stress levels and increase productivity using meditative media.
 
 **This documentation is for the backend of the Mindactivity app. If you're interested in the frontend specifically, go to [https://github.com/SchoolOfCode/w9_frontend-project-mindactivity]**
 
