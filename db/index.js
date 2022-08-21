@@ -9,7 +9,7 @@ export const pool = new pg.Pool({
     // database: process.env.PGDATABASE,
     // password: process.env.PGPASSWORD,
     // port: process.env.PGPORT, 
-    connectionString: process.env.DATABASE_URI,
+    connectionString: "postgres://rzjiqueojbcnzg:276d0558be76f12cf3840ed1c593ebeb7d42097e5f2cfd9291c4849d0a5fd6e5@ec2-34-241-90-235.eu-west-1.compute.amazonaws.com:5432/d9arpv4malmbb6",
     ssl:{rejectUnauthorized:false},
 })
 
