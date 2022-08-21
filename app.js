@@ -27,7 +27,7 @@ import sslRedirect from "heroku-ssl-redirect";
 // });
 
 app.use(sslRedirect());
-
+app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 
 //middleware
