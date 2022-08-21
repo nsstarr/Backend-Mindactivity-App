@@ -38,5 +38,10 @@ app.get('/api', (req, res) => {
   res.json({message: 'Hello from the server!'});
 });
 
+const PORT = process.env.port || 3001;
+
+app.listen(PORT, function () {
+  console.log(`Server is running on port ${PORT}`);
+});
 
 export default app;
