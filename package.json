@@ -17,11 +17,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "heroku-ssl-redirect": "^0.1.1",
-    "kill-port": "^2.0.0",
     "morgan": "^1.10.0",
+    "kill-port": "^2.0.1",
     "pg": "^8.7.3"
   },
   "devDependencies": {
@@ -32,7 +33,6 @@
     "supertest": "^6.2.3"
   },
   "engines": {
-    "node": "v16.15.0",
-    "npm": "8.5.5"
+    "node": "v16.15.0"
   }
 }
