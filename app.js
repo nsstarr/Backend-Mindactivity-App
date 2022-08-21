@@ -3,6 +3,7 @@ import affirmationsRouter from "./router/affirmationRouter.js";
 import blogsRouter from "./router/blogsRouter.js";
 const app = express();
 import cors from 'cors';
+import sslRedirect from "heroku-ssl-redirect";
 
 // //CORS
 // app.use((req, res, next) => {
@@ -24,6 +25,8 @@ import cors from 'cors';
 //   );
 //   next();
 // });
+
+app.use(sslRedirect());
 
 app.use(express.urlencoded({ extended: false }));
 
