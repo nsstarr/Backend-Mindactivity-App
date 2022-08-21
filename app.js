@@ -7,27 +7,27 @@ const app = express();
 
 
 //CORS 
-// app.use((req, res, next) => {
-//   //Website you wish to allow to connect
-//   res.setHeader(
-//     "Access-Control-Allow-Origin",
-//     "https://week-9-project.herokuapp.com/"
-//   );
+app.use((req, res, next) => {
+  //Website you wish to allow to connect
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://week-9-project.herokuapp.com/"
+  );
 
-//   //Set to true if you need the website to include cookies in the requests sent
-//   res.setHeader("Access-Control-Allow-Credentials", true);
+  //Set to true if you need the website to include cookies in the requests sent
+  res.setHeader("Access-Control-Allow-Credentials", true);
 
-//   // Request headers you wish to allow
-//   res.setHeader(
-//     "Access-Control-Allow-Headers",
-//     "Origin, X-Requested-With, Control-Type, Accept"
-//   );
-//   // Request methods you wish to allow
-//   res.setHeader("Access-Control-Allow-Methods", "POST, PUT, DELETE, OPTIONS, GET");
-//   next();
-// });
+  // Request headers you wish to allow
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Control-Type, Accept"
+  );
+  // Request methods you wish to allow
+  res.setHeader("Access-Control-Allow-Methods", "POST, PUT, DELETE, OPTIONS, GET");
+  next();
+});
 
-// app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false }));
 
 
 //middleware
