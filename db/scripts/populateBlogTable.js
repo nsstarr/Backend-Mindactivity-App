@@ -1,5 +1,5 @@
 import { query } from "../index.js";
-import blogs from "../../lib/blogs.js";
+import blogs from "../../lib/blogsData.js";
 
 // adding data to blogs table
 
