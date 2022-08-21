@@ -8,7 +8,7 @@ const app = express();
 //CORS 
 app.use((req, res, next) => {
   //Website you wish to allow to connect
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3001");
 
   //Set to true if you need the website to include cookies in the requests sent
   res.setHeader("Access-Control-Allow-Credentials", true);
@@ -38,7 +38,7 @@ app.get('/api', (req, res) => {
   res.json({message: 'Hello from the server!'});
 });
 
-const PORT = process.env.port || 3001;
+const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, function () {
   console.log(`Server is running on port ${PORT}`);
