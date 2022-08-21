@@ -8,7 +8,10 @@ const app = express();
 //CORS 
 app.use((req, res, next) => {
   //Website you wish to allow to connect
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3001");
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://week-9-project.herokuapp.com/"
+  );
 
   //Set to true if you need the website to include cookies in the requests sent
   res.setHeader("Access-Control-Allow-Credentials", true);
